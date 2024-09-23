@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0; padding: 00; box-sizing: border-box; border: 00;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+$Black-50: #333333;
+$Black: #000000;
+$White: #FFFFFF;
+$Blue-50: #1E90FF;
+$default-background: $Black-50;
+
+
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+button{
+    padding:  .5rem 1.5rem;
+    background-color: $Blue-50;
+    color: $White;
+    border-radius: 5px;
+}
+
+body {
+    background-color: $default-background;
+    color: $White;
+}

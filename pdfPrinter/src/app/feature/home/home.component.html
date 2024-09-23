@@ -1,0 +1,18 @@
+<app-header/>
+
+<main class="align">
+    <div class="align content">
+        <div class="input-container align" (click)="inputClick()">
+            <span>
+                <h1>Selecione um arquivo</h1>
+                @if (file) {
+                    <p>{{file.name}}</p>
+                }
+            </span>
+            <input type="file" name="fileInput" id="fileInput" accept=".pdf" (change)="changeFile($event)">
+        </div>
+        <button (click)="print()">
+            Imprimir
+        </button>
+    </div>
+</main>
